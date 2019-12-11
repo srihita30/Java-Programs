@@ -2,7 +2,7 @@ import java.util.Scanner; //Import the scanner class
 
 /*
 @author: Srihita 
-Find least value
+This will find the least value
 Used instance methods and not static methods - as instance methods is the most used.
 */
 
