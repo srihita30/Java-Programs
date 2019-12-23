@@ -23,7 +23,7 @@ public class ExtendAddFunctionality{
 
 		int addingTheNumbers = an.addingTheNumbers(newArray);
 
-		System.out.println("The sum of all the 5 numbers entered is " + addingTheNumbers);
+		System.out.println("The sum of all of the 5 numbers entered is " + addingTheNumbers);
 
 	}
 }
