@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class IndexVal{
 	
+//Index value finder
+
 	public static void main(String[] args) {
 
 
