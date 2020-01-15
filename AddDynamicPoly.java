@@ -7,6 +7,7 @@ public class AddDynamicPoly extends AddNumbers{
 		Scanner obj = new Scanner(System.in);
 
 		System.out.println("Enter any 5 numbers to add ");
+		//Reading all input values. 
 
 		int num1 = obj.nextInt();
 
