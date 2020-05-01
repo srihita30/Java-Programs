@@ -24,9 +24,9 @@ public class InheritDoubleToCalculate extends SumOfNumbers{
 
 		//Inheriting and using DiffNumbers and its functionality. 
 
-		DiffNumbers finalAnswer = new DiffNumbers();
+		DiffOfNumbers finalAnswer = new DiffOfNumbers();
 
-		int subtractNumbers = finalAnswer.subtractNumbers(addTheNum, num1);
+		int subtractNumbers = finalAnswer.subtractNumb(addTheNum, num1);
 
 		System.out.println("The final answer after subtracting is " + subtractNumbers); 
 

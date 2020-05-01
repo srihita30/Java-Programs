@@ -4,7 +4,7 @@ public class PrinterOFHighest {
 
 		PrinterOFHighest printedVal = new PrinterOFHighest(); 
 
-		printedVal.printerMethod();
+		printedVal.printerMethod(4);
 
 	}
 

@@ -36,4 +36,10 @@ public class DiffOfNumbers{
 	}
 
 
+	public int subtractNumb(int addTheNum, int num1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
 }
