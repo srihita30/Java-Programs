@@ -1,5 +1,9 @@
 import java.util.Scanner; 
-
+/****
+ * 
+ * @author hitu
+ *
+ */
 public class AddBinary{
 
 	public static void main(String[] args){
