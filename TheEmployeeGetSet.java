@@ -1,11 +1,10 @@
 /**
  * This is the Get set class for the "EmployeeGrade" class. 
- */
-
-/**
+ *
+ *
  * @author Srihita
  *
- */
+ **/
 public class TheEmployeeGetSet {
 		
 		private int id = 0;
