@@ -3,16 +3,43 @@ import java.util.ArrayList;
 public class PatientDangerPojo{
 
 	private String thePatient = " "; 
-	private String dangerZone = "green"; 
+
+	private int age = 0;
+
+	private int bmi = 0; 
+
+	private int fastingLevel = 0; 
+
+	private int randomLevel = 0; 
+
+	private String riskLevel = "green"; 
+
 	private ArrayList<Double> readings = new ArrayList<Double>();
+	
 	private ArrayList<Double> finalValue = new ArrayList<Double>();
 	
 	public String getThePatient(){
 		return this.thePatient; 
 	}
 
-	public String getDangerZone(){
-		return this.dangerZone; 
+	public int getAge(){
+		return this.age; 
+	}
+
+	public int getBmi(){
+		return this.bmi; 
+	}
+
+	public int getFastingLevel(){
+		return this.fastingLevel; 
+	}
+
+	public int getRandomLevel(){
+		return this.randomLevel; 
+	}
+
+	public String getRiskLevel(){
+		return this.riskLevel; 
 	}
 
 	public ArrayList<Double> getReadings(){
@@ -29,9 +56,25 @@ public class PatientDangerPojo{
 		this.thePatient = patientsName; 
 	}
 
-	public void setDangerZone(String itsTheDangerZone){
+	public int setAge(int patientAge){
+		return this.age = patientAge; 
+	}
 
-		this.dangerZone = itsTheDangerZone; 
+	public int setBmi(int patientBmi){
+		return this.bmi = patientBmi; 
+	}
+
+	public int setFastingLevel(int patientFastingLevel){
+		return this.fastingLevel = patientFastingLevel; 
+	}
+
+	public int setRandomLevel(int patientRandomLevel){
+		return this.randomLevel = patientRandomLevel; 
+	}
+
+	public void setRiskLevel(String itsTheRiskLevel){
+
+		this.riskLevel = itsTheRiskLevel; 
 	}
 
 	public void setReadings(ArrayList<Double> patientReading){
