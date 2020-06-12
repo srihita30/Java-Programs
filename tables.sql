@@ -10,4 +10,11 @@ create table t_user_info(
 	c_creation_date	timestamp DEFAULT current_timestamp, 
 	PRIMARY KEY (c_id)
 	) 
-comment = 'This table is to hold patient profile.'  
+comment = 'This table is to hold patient profile.';  
+
+create table t_user_sugar_readings(
+    c_id			int NOT NULL REFERENCES t_user_info(c_id), 
+    c_reading		double NOT NULL, 
+    c_timestamp		timestamp DEFAULT current_timestamp
+) 
+comment = 'This table is for storing user readings';
