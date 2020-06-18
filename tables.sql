@@ -19,11 +19,14 @@ create table t_user_sugar_readings(
 ) 
 comment = 'This table is for storing user readings';
 
+DROP TABLE t_user_bmi;
+
 create table t_user_bmi(
 	c_id				int NOT NULL REFERENCES t_user_info(c_id),
     c_weight			double NOT NULL, 
     c_height			double NOT NULL, 
     c_age				int NOT NULL, 
     c_gender			varchar(6), 
-    c_creation_date		timestamp DEFAULT current_timestamp 
-)
+    c_creation_date		timestamp DEFAULT current_timestamp, 
+    PRIMARY KEY (c_id, c_creation_date) 
+);
