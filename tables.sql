@@ -28,5 +28,7 @@ create table t_user_bmi(
     c_age				int NOT NULL, 
     c_gender			varchar(6), 
     c_creation_date		timestamp DEFAULT current_timestamp, 
+    c_bmi_value			double NOT NULL,
+    c_bmi_category		varchar(50),
     PRIMARY KEY (c_id, c_creation_date) 
 );
