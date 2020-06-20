@@ -19,6 +19,20 @@ create table t_user_sugar_readings(
 ) 
 comment = 'This table is for storing user readings';
 
+CREATE TABLE t_bmi_category_master(
+c_bmi_category		varchar(50) PRIMARY KEY,
+c_date				timestamp DEFAULT current_timestamp
+);
+
+insert into t_bmi_category_master(c_bmi_category) values('underweight');
+
+insert into t_bmi_category_master(c_bmi_category) values('normal');
+
+insert into t_bmi_category_master(c_bmi_category) values('overweight');
+
+insert into t_bmi_category_master(c_bmi_category) values('obese');
+ COMMIT;
+
 DROP TABLE t_user_bmi;
 
 create table t_user_bmi(
@@ -29,6 +43,9 @@ create table t_user_bmi(
     c_gender			varchar(6), 
     c_creation_date		timestamp DEFAULT current_timestamp, 
     c_bmi_value			double NOT NULL,
-    c_bmi_category		varchar(50),
+    c_bmi_category		varchar(50) references t_bmi_category_master(c_bmi_category),
     PRIMARY KEY (c_id, c_creation_date) 
 );
+
+
+select * from t_bmi_category_master;
